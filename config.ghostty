@@ -1,0 +1,25 @@
+# if the operation works same termianl window, like splitting window, closing window. use ctrl or sh
+# if
+
+theme = dark:Catppuccin Frappe,light:Catppuccin Latte
+
+# the syntax is "key = value".
+background-opacity=0.80
+background-blur=16
+background = #000000
+foreground = ffffff
+
+# close window
+keybind = ctrl+d=close_surface
+
+# splitting window
+keybind = ctrl+s=new_split:right
+keybind = alt+s=new_split:down
+keybind = ctrl+shift+s=new_split:auto
+
+#
+keybind = ctrl+h=toggle_maximize
+keybind = ctrl+e=text:nvim ~/.config/ghostty/config.ghostty\r
+keybind = ctrl+t=new_tab
+keybind = ctrl+n=next_tab
+
