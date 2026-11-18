@@ -13,13 +13,19 @@ foreground = ffffff
 keybind = ctrl+d=close_surface
 
 # splitting window
-keybind = ctrl+s=new_split:right
-keybind = alt+s=new_split:down
-keybind = ctrl+shift+s=new_split:auto
+keybind = ctrl+s>r=new_split:right
+keybind = ctrl+s>d=new_split:down
+keybind = ctrl+s>s=new_split:auto
 
-#
+# window formatting
 keybind = ctrl+h=toggle_maximize
+keybind = ctrl+f=toggle_fullscreen
+
+# edit the config file
 keybind = ctrl+e=text:nvim ~/.config/ghostty/config.ghostty\r
+
+# tab controls
 keybind = ctrl+t=new_tab
+keybind = ctrl+o=toggle_tab_overview
 keybind = ctrl+n=next_tab
 
